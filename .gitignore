@@ -1,0 +1,42 @@
+<?php
+
+//#1 define namespace of this plugin
+anamespace Maze\BackToDeathPlugin;
+
+//#2 Import PocketMine APIs Library
+// for this plugin we need base, player, location, events, command
+
+use pocketmine\command\Command;
+use pocketmine\command\Commandsender;
+use pocketmine\plugin\PluginBase;
+use pocketmine\utila\TextFormat;
+use pocketmine\player;
+use pocketmine\server;
+use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\event\Listener;
+use pocketmine\level\position;
+use pocketmine\level\Level;
+
+//#3 Class name for this plugin, want or listen of player events;
+
+class BackToDeathPoint extends PluginBase;
+
+
+
+
+use pocketmine\plugin\PluginBase;
+
+class BackToDeathPlugin extends PluginBase;
+
+    public function onEnable() {
+        $this->getLogger()info("onEnable() has been called!");
+   
+    }
+
+    public function onDisable() {
+        $this->getLogger()info("onDisable() has been called!");
+    
+    }
+}
+
+?>
